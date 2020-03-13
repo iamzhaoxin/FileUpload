@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>提交成功</title>
+    </head>
+    <body>
+        <br>
+        <h1>提交成功！</h1>
+
+        <br><br><br>
+
+        <p>2020年3月11日</p>
+        <p>起源于收毛概心得，QQ上一个个接收，按着名单一个个对太麻烦了，awsl</p>
+
+        <br><br>
+
+        <h2>logic:</h2>
+        <p> init实现初始化学号及状态赋0<br>
+            首页提交调用FileUploadServlet调用DBconnection连接数据库，文件->上传，学号->数据库状态赋1<br>
+            提交成功进入success页</p>
+        <p> 打王者的时候意识到这次要提交两篇心得……增加了心得2的提交入口<br>
+            然后很粗糙得增加了一个servlet用来处理第二个文件……</p>
+            
+        <h2>todo:</h2>
+        <p> 把心得的两个servlet整合<br>
+            提交失败返回首页而不是error<br>
+            对学号进行约束<br>
+            记录提交时间<br>
+            验证是否提交文件再将对应学号的状态赋1.<br>
+            增加后台管理界面，不用手动运行init.class、登陆数据库、远程sz服务器<br>
+            首页改版为多科作业的提交入口<br>
+            增加发作业功能，自助下载<br>
+            美化界面<br>
+            增加个人密码登陆过程</p>
+    </body>
+</html>
